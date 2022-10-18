@@ -16,11 +16,7 @@ fn main() -> Result<()> {
     launch_neovide(&a)?;
 
     Ok(())
-    // let choice = get_input(dirs)?;
 }
-
-// #[allow(unused)]
-// fn get_input(dirs: Vec<String>) -> Result<String> {}
 
 fn get_zoxide_list() -> Result<Vec<String>> {
     let output = Command::new("zoxide").args(["query", "-l"]).output()?;
